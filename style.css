@@ -1,0 +1,148 @@
+@font-face {
+    font-family: Avenir LT Pro;
+    src: url(fonts/AvenirLTProBlack.otf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: Avenir LT Pro;
+    src: url(fonts/AvenirLTProHeavy.otf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Avenir LT Pro;
+    src: url(fonts/AvenirLTProLight.otf);
+    font-weight: lighter;
+}
+/* Global */
+html{
+    font-family: 'Avenir LT Pro', Helvetica, sans-serif;
+}
+body{
+    padding: 0 64px;
+    margin: 0;
+}
+
+a{
+    color: black;
+}
+
+/*Navbar */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-items > a{
+    margin: 0 1em;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+.nav-items > a:hover{
+    background-color: #3EEBBE;
+}
+
+/* Sections */
+section{
+    margin-bottom: 64px;
+}
+/* Header */
+h1{
+    font-size: 36px;
+}
+
+#header-section p{
+    font-size: 16px;
+}
+
+/* Content */
+section > header{
+    margin-bottom: 16px;
+}
+.content-items{
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.item-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.item-header h4, p{
+    margin: 0;
+}
+
+.item-description{
+    margin-bottom: 24px;
+}
+.item-links{
+    display: flex;
+    gap: 1em;
+}
+.item-links a{
+    text-decoration: underline;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+/* content image */
+.content-items img{
+    max-width: 50%;
+    transition: all 1s ease-in-out 
+}
+
+.content-items img:hover{
+    box-shadow: 3px 8px 10px -5px rgba(0,0,0,0.4); 
+}
+
+/* Artwork */
+.slider-container{
+    display: flex;
+    cursor: grab;
+    justify-content: flex-start;
+    gap: 24px;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none;
+}
+
+.slider-container.active{
+    cursor: grabbing;
+}
+.slider-container::-webkit-scrollbar{
+    display: none;
+}
+.slide-card{
+    max-height: 300px;
+    border: 1px solid #F3F3F3; 
+    
+}
+
+.slide-card img{
+    max-height: 300px ;
+}
+
+/* Footer */
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2em;
+}
+
+footer h4{
+    margin: .2em;
+}
+
+footer > div{
+    margin-top: 1em;
+    display: flex;
+    gap: 1em;
+}
