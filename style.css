@@ -19,12 +19,28 @@ html{
     font-family: 'Avenir LT Pro', Helvetica, sans-serif;
 }
 body{
-    padding: 0 64px;
+    padding: 0 6em;
     margin: 0;
 }
 
 a{
     color: black;
+    transition: all 1s ease-in-out;
+    margin: 0 1em 0 0;
+}
+a:hover{
+    background-color: #3EEBBE;
+    text-decoration-color: transparent;
+    -webkit-text-decoration-color: transparent;
+    -moz-text-decoration-color: transparent;
+}
+
+p{
+    font-size: 1.2rem;
+}
+
+h4{
+    font-size: 1.3rem;
 }
 
 /*Navbar */
@@ -34,15 +50,7 @@ nav {
     justify-content: space-between;
 }
 
-.nav-items > a{
-    margin: 0 1em;
-    text-decoration: underline;
-    cursor: pointer;
-    transition: all 1s ease-in-out;
-}
-.nav-items > a:hover{
-    background-color: #3EEBBE;
-}
+
 
 /* Sections */
 section{
@@ -50,12 +58,10 @@ section{
 }
 /* Header */
 h1{
-    font-size: 36px;
+    font-size: 3rem;
 }
 
-#header-section p{
-    font-size: 16px;
-}
+
 
 /* Content */
 section > header{
@@ -66,6 +72,7 @@ section > header{
     gap: 24px;
     justify-content: space-between;
     margin-bottom: 80px;
+    align-items: center;
 }
 
 .item-header{
@@ -82,20 +89,19 @@ section > header{
 .item-description{
     margin-bottom: 24px;
 }
+
 .item-links{
     display: flex;
-    gap: 1em;
+    
 }
 .item-links a{
-    text-decoration: underline;
     font-weight: 400;
-    cursor: pointer;
 }
 
 /* content image */
 .content-items img{
     max-width: 50%;
-    transition: all 1s ease-in-out 
+    transition: all 1s ease-in-out; 
 }
 
 .content-items img:hover{
@@ -123,10 +129,16 @@ section > header{
     max-height: 300px;
     border: 1px solid #F3F3F3; 
     
+    
 }
+
 
 .slide-card img{
     max-height: 300px ;
+    transition: all ease-in-out 1s;
+}
+.slide-card img:hover{
+    box-shadow: -2px 1px 12px 0px rgba(0,0,0,0.75);
 }
 
 /* Footer */
