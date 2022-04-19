@@ -61,8 +61,6 @@ h1{
     font-size: 3rem;
 }
 
-
-
 /* Content */
 section > header{
     margin-bottom: 16px;
@@ -109,6 +107,14 @@ section > header{
 }
 
 /* Artwork */
+.slider-arrow-container{
+    display: flex;
+    align-items: center;
+}
+
+.slider-arrow-container > a {
+    cursor: pointer;
+}
 .slider-container{
     display: flex;
     cursor: grab;
